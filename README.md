@@ -53,28 +53,33 @@ workout/
 - **Never edit a logged session after the fact.** Correcting a typo is fine; rewriting history isn't. The value of the log is that it's true.
 - **One file per month** in `logs/`, named `YYYY-MM.md`.
 
-## Getting this onto GitHub
+## Working with this repo
 
-The repo is already initialized with a first commit. To publish it:
+Live at **<https://github.com/Nanikumar4568/workout>** — `origin` is configured and tracking `main`. Day to day:
 
 ```bash
-# 1. Create an EMPTY repo named "workout" on github.com (no README, no .gitignore, no license)
-
-# 2. Point origin at it — replace YOUR_USERNAME
-git remote add origin git@github.com:YOUR_USERNAME/workout.git
-
-# 3. Fix the commit author if you want it attributed to your account
-git config user.name  "Your Name"
-git config user.email "you@example.com"
-git commit --amend --reset-author --no-edit
-
-# 4. Push
-git push -u origin main
+git add -A && git commit -m "log: week of 2026-10-05"
+git push
+git pull        # if you also edit from your phone or another machine
 ```
 
-Already have an `origin` placeholder set? Use `git remote set-url origin <url>` instead of `git remote add`.
+**On a new machine:**
 
-> **Private or public?** This log can contain body weight and measurements. If that matters to you, make the repo **private** — Settings → Danger Zone → Change visibility.
+```bash
+git clone https://github.com/Nanikumar4568/workout.git
+```
+
+**Re-pointing origin** (if the repo ever moves):
+
+```bash
+git remote set-url origin https://github.com/YOUR_USERNAME/workout.git
+```
+
+> **⚠️ This repo is public.** The programs and reference are meant to be, but `logs/` and `tracking/body-measurements.md` will eventually hold your bodyweight, measurements, and training notes. Two options:
+> - Make the repo **private** — Settings → Danger Zone → Change visibility
+> - Keep it public and exclude your personal numbers — uncomment the two lines at the bottom of `.gitignore`
+>
+> Both are one-line changes. Do it before you log your first weigh-in, not after.
 
 ## Daily workflow
 
