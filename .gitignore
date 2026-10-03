@@ -44,3 +44,6 @@ dist/
 coverage/
 *.local
 .eslintcache
+
+# TypeScript build info
+*.tsbuildinfo

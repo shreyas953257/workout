@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Forge · themes
+   One block per entry in src/data/themes.ts. The swatches shown in the theme
+   picker are read from that file, so --accent / --accent-2 / --accent-3 / --bg
+   here MUST match it exactly — tests/data-integrity.test.ts checks the shape.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Ember — the default. Warm iron, low light.
+   -------------------------------------------------------------------------- */
+:root,
+[data-theme='ember'] {
+  --bg: #08090c;
+  --bg-2: #0c0e13;
+  --surface: rgba(255, 255, 255, 0.032);
+  --surface-2: rgba(255, 255, 255, 0.055);
+  --surface-3: rgba(255, 255, 255, 0.085);
+  --sunken: rgba(0, 0, 0, 0.35);
+  --line: rgba(255, 255, 255, 0.085);
+  --line-strong: rgba(255, 255, 255, 0.16);
+  --accent-line: rgba(255, 138, 61, 0.32);
+
+  --text: #eef1f8;
+  --text-dim: #a3abbe;
+  --text-faint: #6f7789;
+  --text-invert: #0a0705;
+
+  --accent: #ff8a3d;
+  --accent-2: #ff4d6d;
+  --accent-3: #a855f7;
+  --accent-ink: #1a0d04;
+  --accent-soft: rgba(255, 138, 61, 0.14);
+  --accent-soft-2: rgba(255, 77, 109, 0.14);
+  --accent-glow: rgba(255, 138, 61, 0.4);
+  --grad-accent: linear-gradient(120deg, #ff8a3d 0%, #ff4d6d 55%, #a855f7 100%);
+  --grad-hero: radial-gradient(120% 100% at 12% -10%, rgba(255, 138, 61, 0.16) 0%, rgba(168, 85, 247, 0.07) 42%, transparent 72%);
+  --grad-sheen: linear-gradient(100deg, transparent 20%, rgba(255, 255, 255, 0.09) 50%, transparent 80%);
+
+  --chart-1: #ff8a3d;
+  --chart-2: #ff4d6d;
+  --chart-3: #a855f7;
+  --chart-4: #5ad1ff;
+  --chart-5: #5fd08a;
+  --chart-6: #ffd166;
+}
+
+/* --------------------------------------------------------------------------
+   Frost — cold steel, early-morning gym light.
+   -------------------------------------------------------------------------- */
+[data-theme='frost'] {
+  --bg: #060a10;
+  --bg-2: #0a1018;
+  --surface: rgba(180, 214, 255, 0.045);
+  --surface-2: rgba(180, 214, 255, 0.075);
+  --surface-3: rgba(180, 214, 255, 0.11);
+  --sunken: rgba(0, 0, 0, 0.38);
+  --line: rgba(160, 200, 255, 0.11);
+  --line-strong: rgba(160, 200, 255, 0.2);
+  --accent-line: rgba(90, 209, 255, 0.34);
+
+  --text: #eaf2fb;
+  --text-dim: #9fb1c9;
+  --text-faint: #6a7c94;
+  --text-invert: #03121c;
+
+  --accent: #5ad1ff;
+  --accent-2: #4f7cff;
+  --accent-3: #8b5cf6;
+  --accent-ink: #04141f;
+  --accent-soft: rgba(90, 209, 255, 0.14);
+  --accent-soft-2: rgba(79, 124, 255, 0.15);
+  --accent-glow: rgba(90, 209, 255, 0.38);
+  --grad-accent: linear-gradient(120deg, #5ad1ff 0%, #4f7cff 55%, #8b5cf6 100%);
+  --grad-hero: radial-gradient(120% 100% at 12% -10%, rgba(90, 209, 255, 0.16) 0%, rgba(139, 92, 246, 0.08) 42%, transparent 72%);
+
+  --chart-1: #5ad1ff;
+  --chart-2: #4f7cff;
+  --chart-3: #8b5cf6;
+  --chart-4: #ff8a3d;
+  --chart-5: #5fd08a;
+  --chart-6: #ffd166;
+}
+
+/* --------------------------------------------------------------------------
+   Voltage — high-contrast acid green.
+   -------------------------------------------------------------------------- */
+[data-theme='voltage'] {
+  --bg: #070b07;
+  --bg-2: #0b120b;
+  --surface: rgba(190, 255, 130, 0.04);
+  --surface-2: rgba(190, 255, 130, 0.07);
+  --surface-3: rgba(190, 255, 130, 0.1);
+  --sunken: rgba(0, 0, 0, 0.4);
+  --line: rgba(180, 255, 140, 0.12);
+  --line-strong: rgba(180, 255, 140, 0.22);
+  --accent-line: rgba(182, 255, 61, 0.36);
+
+  --text: #f0f7ea;
+  --text-dim: #a6b8a2;
+  --text-faint: #71806e;
+  --text-invert: #08130a;
+
+  --accent: #b6ff3d;
+  --accent-2: #00e5a0;
+  --accent-3: #5ad1ff;
+  --accent-ink: #0d1a04;
+  --accent-soft: rgba(182, 255, 61, 0.14);
+  --accent-soft-2: rgba(0, 229, 160, 0.14);
+  --accent-glow: rgba(182, 255, 61, 0.36);
+  --grad-accent: linear-gradient(120deg, #b6ff3d 0%, #00e5a0 55%, #5ad1ff 100%);
+  --grad-hero: radial-gradient(120% 100% at 12% -10%, rgba(182, 255, 61, 0.14) 0%, rgba(0, 229, 160, 0.07) 42%, transparent 72%);
+
+  --chart-1: #b6ff3d;
+  --chart-2: #00e5a0;
+  --chart-3: #5ad1ff;
+  --chart-4: #ff8a3d;
+  --chart-5: #ff4d6d;
+  --chart-6: #ffd166;
+}
+
+/* --------------------------------------------------------------------------
+   Verdant — deep forest. Calm, steady, unshowy.
+   -------------------------------------------------------------------------- */
+[data-theme='verdant'] {
+  --bg: #060b08;
+  --bg-2: #0a110d;
+  --surface: rgba(160, 230, 180, 0.04);
+  --surface-2: rgba(160, 230, 180, 0.07);
+  --surface-3: rgba(160, 230, 180, 0.1);
+  --sunken: rgba(0, 0, 0, 0.38);
+  --line: rgba(150, 220, 175, 0.11);
+  --line-strong: rgba(150, 220, 175, 0.2);
+  --accent-line: rgba(95, 208, 138, 0.32);
+
+  --text: #ecf5ee;
+  --text-dim: #a2b6a8;
+  --text-faint: #6d7f73;
+  --text-invert: #06130b;
+
+  --accent: #5fd08a;
+  --accent-2: #a3d94a;
+  --accent-3: #2fb3a0;
+  --accent-ink: #07160d;
+  --accent-soft: rgba(95, 208, 138, 0.14);
+  --accent-soft-2: rgba(163, 217, 74, 0.13);
+  --accent-glow: rgba(95, 208, 138, 0.34);
+  --grad-accent: linear-gradient(120deg, #5fd08a 0%, #a3d94a 55%, #2fb3a0 100%);
+  --grad-hero: radial-gradient(120% 100% at 12% -10%, rgba(95, 208, 138, 0.14) 0%, rgba(47, 179, 160, 0.07) 42%, transparent 72%);
+
+  --chart-1: #5fd08a;
+  --chart-2: #a3d94a;
+  --chart-3: #2fb3a0;
+  --chart-4: #ffd166;
+  --chart-5: #ff8a3d;
+  --chart-6: #5ad1ff;
+}
+
+/* --------------------------------------------------------------------------
+   Obsidian — near-monochrome. One accent, everything else black glass.
+   -------------------------------------------------------------------------- */
+[data-theme='obsidian'] {
+  --bg: #050506;
+  --bg-2: #09090b;
+  --surface: rgba(255, 255, 255, 0.035);
+  --surface-2: rgba(255, 255, 255, 0.06);
+  --surface-3: rgba(255, 255, 255, 0.09);
+  --sunken: rgba(0, 0, 0, 0.5);
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.18);
+  --accent-line: rgba(230, 233, 242, 0.3);
+
+  --text: #f2f4f9;
+  --text-dim: #a8afbf;
+  --text-faint: #72798a;
+  --text-invert: #0a0a0c;
+
+  --accent: #e6e9f2;
+  --accent-2: #9aa3b8;
+  --accent-3: #ff6b4a;
+  --accent-ink: #0a0a0c;
+  --accent-soft: rgba(230, 233, 242, 0.12);
+  --accent-soft-2: rgba(255, 107, 74, 0.14);
+  --accent-glow: rgba(230, 233, 242, 0.24);
+  --grad-accent: linear-gradient(120deg, #e6e9f2 0%, #9aa3b8 60%, #ff6b4a 100%);
+  --grad-hero: radial-gradient(120% 100% at 12% -10%, rgba(230, 233, 242, 0.09) 0%, rgba(255, 107, 74, 0.05) 45%, transparent 74%);
+
+  --chart-1: #e6e9f2;
+  --chart-2: #9aa3b8;
+  --chart-3: #ff6b4a;
+  --chart-4: #6f7789;
+  --chart-5: #c3c9d8;
+  --chart-6: #ff9b7d;
+}
+
+/* --------------------------------------------------------------------------
+   Aurora — the endgame palette.
+   -------------------------------------------------------------------------- */
+[data-theme='aurora'] {
+  --bg: #07060f;
+  --bg-2: #0c0a18;
+  --surface: rgba(200, 170, 255, 0.045);
+  --surface-2: rgba(200, 170, 255, 0.075);
+  --surface-3: rgba(200, 170, 255, 0.11);
+  --sunken: rgba(0, 0, 0, 0.4);
+  --line: rgba(190, 170, 255, 0.12);
+  --line-strong: rgba(190, 170, 255, 0.22);
+  --accent-line: rgba(192, 132, 252, 0.36);
+
+  --text: #f3eefb;
+  --text-dim: #b0a6c9;
+  --text-faint: #7b7394;
+  --text-invert: #120a1e;
+
+  --accent: #c084fc;
+  --accent-2: #22d3ee;
+  --accent-3: #f472b6;
+  --accent-ink: #16082a;
+  --accent-soft: rgba(192, 132, 252, 0.15);
+  --accent-soft-2: rgba(34, 211, 238, 0.14);
+  --accent-glow: rgba(192, 132, 252, 0.42);
+  --grad-accent: linear-gradient(120deg, #c084fc 0%, #22d3ee 50%, #f472b6 100%);
+  --grad-hero: radial-gradient(130% 110% at 10% -14%, rgba(192, 132, 252, 0.2) 0%, rgba(34, 211, 238, 0.1) 38%, rgba(244, 114, 182, 0.08) 62%, transparent 82%);
+
+  --chart-1: #c084fc;
+  --chart-2: #22d3ee;
+  --chart-3: #f472b6;
+  --chart-4: #a3d94a;
+  --chart-5: #ffd166;
+  --chart-6: #5ad1ff;
+}
