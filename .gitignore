@@ -1,0 +1,39 @@
+# OS junk
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.fleet/
+
+# Temp + scratch
+tmp/
+*.tmp
+*.bak
+scratch.md
+
+# Exports and generated files (keep the source .md in git)
+*.pdf
+*.csv
+*.xlsx
+!tracking/*.csv
+
+# Sync clients
+.dropbox
+.dropbox.attr
+*.sync-conflict-*
+
+# Notes you may not want to publish — uncomment if your repo is public
+# logs/
+# tracking/body-measurements.md
