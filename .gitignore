@@ -37,3 +37,10 @@ scratch.md
 # Notes you may not want to publish — uncomment if your repo is public
 # logs/
 # tracking/body-measurements.md
+
+# Web app
+node_modules/
+dist/
+coverage/
+*.local
+.eslintcache

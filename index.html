@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-theme="ember">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#08090c" />
+    <meta
+      name="description"
+      content="Forge — a gamified workout system: training programs, exercise library, session logging, XP, streaks, achievements and analytics. All data stays on your device."
+    />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
+    <title>Forge — Workout System</title>
+    <style>
+      /* Critical shell: paints before JS loads so there is never a white flash. */
+      :root { color-scheme: dark; }
+      html, body { margin: 0; background: #08090c; }
+      #boot {
+        position: fixed; inset: 0; display: grid; place-content: center; gap: 18px;
+        justify-items: center; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        color: #8b93a7; background: radial-gradient(120% 90% at 50% 0%, #14161d 0%, #08090c 60%);
+      }
+      #boot .mark {
+        width: 54px; height: 54px; border-radius: 16px;
+        background: linear-gradient(150deg, #ff8a3d, #ff4d6d 60%, #a855f7);
+        box-shadow: 0 0 44px rgba(255, 122, 61, .45);
+        animation: bootpulse 1.6s ease-in-out infinite;
+      }
+      #boot .word { font-size: 13px; letter-spacing: .28em; text-transform: uppercase; }
+      @keyframes bootpulse { 0%,100% { transform: scale(1); opacity: .85 } 50% { transform: scale(1.07); opacity: 1 } }
+      @media (prefers-reduced-motion: reduce) { #boot .mark { animation: none } }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="boot" aria-hidden="true">
+      <div class="mark"></div>
+      <div class="word">Forge</div>
+    </div>
+    <noscript>
+      <div style="position:fixed;inset:0;display:grid;place-content:center;padding:32px;text-align:center;color:#e6e9f2;font-family:system-ui,sans-serif;background:#08090c">
+        <p><strong>Forge needs JavaScript.</strong></p>
+        <p style="color:#8b93a7">
+          The full training library is still readable as plain Markdown in this repository —
+          see <code>programs/</code>, <code>reference/</code>, <code>getting-started.md</code> and <code>goals.md</code>.
+        </p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
