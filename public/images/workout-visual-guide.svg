@@ -1,1 +1,133 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#05070b"/><stop offset="1" stop-color="#111827"/></linearGradient><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff3b30"/><stop offset="1" stop-color="#ff9f0a"/></linearGradient><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0a84ff"/><stop offset="1" stop-color="#5e5ce6"/></linearGradient><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#30d158"/><stop offset="1" stop-color="#64d2ff"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1200" height="760" rx="28" fill="url(#bg)"/><text x="55" y="58" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="800" letter-spacing="3">WORKOUT VISUAL GUIDE</text><text x="55" y="88" fill="#9ca3af" font-family="Arial,sans-serif" font-size="15">A premium visual overview of your training split</text><rect x="35" y="115" width="360" height="285" rx="22" fill="#0b0f17" stroke="url(#a)" stroke-width="2"/><rect x="35" y="115" width="360" height="58" rx="22" fill="url(#a)" opacity=".22"/><text x="57" y="142" fill="#fff" font-family="Arial" font-size="13" font-weight="700">DAY 1</text><text x="57" y="164" fill="#fff" font-family="Arial" font-size="20" font-weight="900">CHEST + TRICEPS</text><rect x="420" y="115" width="360" height="285" rx="22" fill="#0b0f17" stroke="url(#b)" stroke-width="2"/><rect x="420" y="115" width="360" height="58" rx="22" fill="url(#b)" opacity=".22"/><text x="442" y="142" fill="#fff" font-family="Arial" font-size="13" font-weight="700">DAY 2</text><text x="442" y="164" fill="#fff" font-family="Arial" font-size="20" font-weight="900">BACK + BICEPS</text><rect x="805" y="115" width="360" height="285" rx="22" fill="#0b0f17" stroke="url(#c)" stroke-width="2"/><rect x="805" y="115" width="360" height="58" rx="22" fill="url(#c)" opacity=".22"/><text x="827" y="142" fill="#fff" font-family="Arial" font-size="13" font-weight="700">DAY 3</text><text x="827" y="164" fill="#fff" font-family="Arial" font-size="20" font-weight="900">LEGS</text><rect x="225" y="430" width="360" height="285" rx="22" fill="#0b0f17" stroke="url(#a)" stroke-width="2"/><rect x="225" y="430" width="360" height="58" rx="22" fill="url(#a)" opacity=".22"/><text x="247" y="457" fill="#fff" font-family="Arial" font-size="13" font-weight="700">DAY 4</text><text x="247" y="479" fill="#fff" font-family="Arial" font-size="20" font-weight="900">SHOULDERS</text><rect x="615" y="430" width="360" height="285" rx="22" fill="#0b0f17" stroke="url(#b)" stroke-width="2"/><rect x="615" y="430" width="360" height="58" rx="22" fill="url(#b)" opacity=".22"/><text x="637" y="457" fill="#fff" font-family="Arial" font-size="13" font-weight="700">DAY 5</text><text x="637" y="479" fill="#fff" font-family="Arial" font-size="20" font-weight="900">ARMS</text><g fill="#cbd5e1" stroke="#9ca3af" stroke-width="7" stroke-linecap="round"><circle cx="215" cy="235" r="20"/><path d="M190 265 Q215 245 240 265 L250 320 L215 345 L180 320 Z"/><path d="M188 275 L155 315 M242 275 L275 315 M200 335 L185 375 M230 335 L245 375"/><circle cx="600" cy="235" r="20"/><path d="M575 265 Q600 245 625 265 L635 320 L600 345 L565 320 Z"/><path d="M573 275 L540 315 M627 275 L660 315 M585 335 L570 375 M615 335 L630 375"/><circle cx="985" cy="235" r="20"/><path d="M960 265 Q985 245 1010 265 L1020 320 L985 345 L950 320 Z"/><path d="M958 275 L925 315 M1012 275 L1045 315 M970 335 L955 375 M1000 335 L1015 375"/><circle cx="405" cy="550" r="20"/><path d="M380 580 Q405 560 430 580 L440 635 L405 660 L370 635 Z"/><path d="M378 590 L345 630 M432 590 L465 630 M390 650 L375 690 M420 650 L435 690"/><circle cx="795" cy="550" r="20"/><path d="M770 580 Q795 560 820 580 L830 635 L795 660 L760 635 Z"/><path d="M768 590 L735 630 M822 590 L855 630 M780 650 L765 690 M810 650 L825 690"/></g><g fill="#ff6b35" filter="url(#glow)"><circle cx="190" cy="275" r="7"/><circle cx="240" cy="275" r="7"/><circle cx="575" cy="275" r="7"/><circle cx="625" cy="275" r="7"/><circle cx="960" cy="275" r="7"/><circle cx="1010" cy="275" r="7"/><circle cx="380" cy="590" r="7"/><circle cx="430" cy="590" r="7"/><circle cx="770" cy="590" r="7"/><circle cx="820" cy="590" r="7"/></g><g fill="#e5e7eb" font-family="Arial" font-size="11" font-weight="700"><text x="57" y="365">BENCH PRESS</text><text x="57" y="385">INCLINE PRESS</text><text x="205" y="365">CHEST FLY</text><text x="205" y="385">TRICEP PUSHDOWN</text><text x="442" y="365">LAT PULLDOWN</text><text x="442" y="385">CABLE ROW</text><text x="590" y="365">BARBELL CURL</text><text x="590" y="385">HAMMER CURL</text><text x="827" y="365">SQUAT</text><text x="827" y="385">LEG PRESS</text><text x="975" y="365">LEG CURL</text><text x="975" y="385">CALF RAISE</text><text x="247" y="680">SHOULDER PRESS</text><text x="247" y="700">LATERAL RAISE</text><text x="397" y="680">FRONT RAISE</text><text x="397" y="700">REVERSE FLY</text><text x="637" y="680">BARBELL CURL</text><text x="637" y="700">HAMMER CURL</text><text x="787" y="680">PREACHER CURL</text><text x="787" y="700">OVERHEAD EXTENSION</text></g><g fill="#9ca3af" font-family="Arial" font-size="10"><text x="315" y="365">3 × 10–12</text><text x="315" y="385">3 × 10–12</text><text x="700" y="365">3 × 10–12</text><text x="700" y="385">3 × 10–12</text><text x="1085" y="365">3 × 10–12</text><text x="1085" y="385">3 × 10–12</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07080c"/><stop offset=".55" stop-color="#10131b"/><stop offset="1" stop-color="#050609"/></linearGradient>
+  <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff6a2a"/><stop offset="1" stop-color="#ff2d55"/></linearGradient>
+  <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7c5cff"/><stop offset="1" stop-color="#d946ef"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+  <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#34d399"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-opacity=".38"/></filter>
+  <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#fff" stroke-opacity=".035"/></pattern>
+  <style>
+    .t{font-family:Inter,Arial,sans-serif;fill:#f8fafc}.m{font-family:Inter,Arial,sans-serif;fill:#94a3b8}
+    .small{font-family:Inter,Arial,sans-serif;fill:#cbd5e1;font-size:13px;font-weight:650;letter-spacing:.4px}
+    .label{font-family:Inter,Arial,sans-serif;fill:#fff;font-size:18px;font-weight:850;letter-spacing:.2px}
+    .line{stroke:#cbd5e1;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}
+    .body{fill:#dbe3ed;stroke:#aeb9c8;stroke-width:3}
+    .muscle{fill:#ff6336;filter:url(#glow)}
+    .equipment{stroke:#64748b;stroke-width:10;stroke-linecap:round}
+  </style>
+</defs>
+
+<rect width="1400" height="820" rx="34" fill="url(#bg)"/>
+<rect width="1400" height="820" rx="34" fill="url(#grid)"/>
+
+<g transform="translate(56 48)">
+  <text class="m" font-size="13" font-weight="800" letter-spacing="4">FORGE · TRAINING VISUAL</text>
+  <text class="t" y="48" font-size="38" font-weight="900">YOUR 5-DAY SPLIT</text>
+  <text class="m" y="76" font-size="15">A visual map of the major movements in your weekly rotation</text>
+  <rect x="1050" y="18" width="230" height="42" rx="21" fill="#ffffff" fill-opacity=".055" stroke="#ffffff" stroke-opacity=".1"/>
+  <circle cx="1076" cy="39" r="6" fill="#ff6336"/><text class="small" x="1092" y="44">MUSCLE FOCUS</text>
+</g>
+
+<!-- card 1 -->
+<g filter="url(#shadow)">
+<rect x="45" y="150" width="250" height="610" rx="28" fill="#0b0e14" stroke="#ff5a35" stroke-opacity=".6"/>
+<rect x="45" y="150" width="250" height="7" rx="4" fill="url(#orange)"/>
+<text class="m" x="70" y="190" font-size="12" font-weight="800" letter-spacing="2">DAY 01</text>
+<text class="label" x="70" y="220">CHEST + TRICEPS</text>
+<g transform="translate(55 260)">
+  <path class="equipment" d="M20 275H205"/><path class="equipment" d="M48 275L70 205"/><path class="equipment" d="M175 275L153 205"/>
+  <path class="equipment" d="M72 205L155 205"/>
+  <circle cx="113" cy="120" r="25" class="body"/>
+  <path d="M86 150 Q113 132 140 150 L151 205 L113 225 L75 205Z" class="body"/>
+  <path class="line" d="M88 160L58 198M138 160L169 198"/>
+  <path class="line" d="M91 210L74 270M135 210L151 270"/>
+  <ellipse cx="91" cy="164" rx="15" ry="11" class="muscle"/><ellipse cx="135" cy="164" rx="15" ry="11" class="muscle"/>
+  <ellipse cx="77" cy="211" rx="9" ry="17" class="muscle"/>
+</g>
+<text class="m" x="70" y="585" font-size="11" letter-spacing="1.4">PRIMARY MOVEMENTS</text>
+<text class="small" x="70" y="615">Bench Press</text><text class="small" x="70" y="642">Incline Press</text><text class="small" x="70" y="669">Chest Fly</text><text class="small" x="70" y="696">Tricep Pushdown</text>
+<rect x="70" y="716" width="112" height="25" rx="12" fill="#ff6336" fill-opacity=".12"/><text x="82" y="733" fill="#ff8a65" font-family="Inter,Arial" font-size="10" font-weight="800">3–4 SETS</text>
+</g>
+
+<!-- card 2 -->
+<g filter="url(#shadow)">
+<rect x="315" y="150" width="250" height="610" rx="28" fill="#0b0e14" stroke="#7c5cff" stroke-opacity=".65"/>
+<rect x="315" y="150" width="250" height="7" rx="4" fill="url(#purple)"/>
+<text class="m" x="340" y="190" font-size="12" font-weight="800" letter-spacing="2">DAY 02</text>
+<text class="label" x="340" y="220">BACK + BICEPS</text>
+<g transform="translate(325 260)">
+  <path class="equipment" d="M36 48V270M190 48V270M36 48H190"/><path class="equipment" d="M78 75H148"/>
+  <circle cx="113" cy="126" r="25" class="body"/>
+  <path d="M88 154 Q113 137 138 154 L147 216 L113 238 L79 216Z" class="body"/>
+  <path class="line" d="M91 163L76 78M135 163L150 78"/>
+  <path class="line" d="M95 222L80 282M131 222L146 282"/>
+  <path d="M76 78Q113 58 150 78" fill="none" stroke="#aeb9c8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M76 78Q113 98 150 78" fill="none" stroke="#ff6336" stroke-opacity=".85" stroke-width="12" stroke-linecap="round" filter="url(#glow)"/>
+  <ellipse cx="92" cy="165" rx="9" ry="19" class="muscle"/><ellipse cx="134" cy="165" rx="9" ry="19" class="muscle"/>
+</g>
+<text class="m" x="340" y="585" font-size="11" letter-spacing="1.4">PRIMARY MOVEMENTS</text>
+<text class="small" x="340" y="615">Lat Pulldown</text><text class="small" x="340" y="642">Cable Row</text><text class="small" x="340" y="669">Barbell Curl</text><text class="small" x="340" y="696">Hammer Curl</text>
+<rect x="340" y="716" width="112" height="25" rx="12" fill="#8b5cf6" fill-opacity=".13"/><text x="352" y="733" fill="#b8a6ff" font-family="Inter,Arial" font-size="10" font-weight="800">3–4 SETS</text>
+</g>
+
+<!-- card 3 -->
+<g filter="url(#shadow)">
+<rect x="585" y="150" width="250" height="610" rx="28" fill="#0b0e14" stroke="#22d3ee" stroke-opacity=".62"/>
+<rect x="585" y="150" width="250" height="7" rx="4" fill="url(#cyan)"/>
+<text class="m" x="610" y="190" font-size="12" font-weight="800" letter-spacing="2">DAY 03</text>
+<text class="label" x="610" y="220">LEGS</text>
+<g transform="translate(595 260)">
+  <circle cx="113" cy="115" r="25" class="body"/>
+  <path d="M87 145 Q113 132 139 145 L145 208 L113 232 L81 208Z" class="body"/>
+  <path class="line" d="M91 156L61 205M135 156L165 205"/>
+  <path class="line" d="M96 215L75 276M130 215L151 276"/>
+  <path class="line" d="M75 276L48 276M151 276L178 276"/>
+  <ellipse cx="98" cy="220" rx="13" ry="19" class="muscle"/><ellipse cx="128" cy="220" rx="13" ry="19" class="muscle"/>
+  <ellipse cx="78" cy="255" rx="10" ry="23" class="muscle"/><ellipse cx="148" cy="255" rx="10" ry="23" class="muscle"/>
+  <path d="M38 298H188" stroke="#1e293b" stroke-width="3"/>
+</g>
+<text class="m" x="610" y="585" font-size="11" letter-spacing="1.4">PRIMARY MOVEMENTS</text>
+<text class="small" x="610" y="615">Back Squat</text><text class="small" x="610" y="642">Leg Press</text><text class="small" x="610" y="669">Leg Curl</text><text class="small" x="610" y="696">Calf Raise</text>
+<rect x="610" y="716" width="112" height="25" rx="12" fill="#22d3ee" fill-opacity=".12"/><text x="622" y="733" fill="#67e8f9" font-family="Inter,Arial" font-size="10" font-weight="800">3–4 SETS</text>
+</g>
+
+<!-- card 4 -->
+<g filter="url(#shadow)">
+<rect x="855" y="150" width="250" height="610" rx="28" fill="#0b0e14" stroke="#34d399" stroke-opacity=".65"/>
+<rect x="855" y="150" width="250" height="7" rx="4" fill="url(#green)"/>
+<text class="m" x="880" y="190" font-size="12" font-weight="800" letter-spacing="2">DAY 04</text>
+<text class="label" x="880" y="220">SHOULDERS</text>
+<g transform="translate(865 260)">
+  <path class="equipment" d="M40 70H186"/><path class="equipment" d="M113 70V36"/>
+  <circle cx="113" cy="125" r="25" class="body"/>
+  <path d="M87 153 Q113 136 139 153 L145 215 L113 236 L81 215Z" class="body"/>
+  <path class="line" d="M91 160L66 91M135 160L160 91"/>
+  <path class="line" d="M96 218L79 278M130 218L147 278"/>
+  <ellipse cx="88" cy="159" rx="16" ry="11" class="muscle"/><ellipse cx="138" cy="159" rx="16" ry="11" class="muscle"/>
+</g>
+<text class="m" x="880" y="585" font-size="11" letter-spacing="1.4">PRIMARY MOVEMENTS</text>
+<text class="small" x="880" y="615">Shoulder Press</text><text class="small" x="880" y="642">Lateral Raise</text><text class="small" x="880" y="669">Front Raise</text><text class="small" x="880" y="696">Reverse Fly</text>
+<rect x="880" y="716" width="112" height="25" rx="12" fill="#34d399" fill-opacity=".12"/><text x="892" y="733" fill="#6ee7b7" font-family="Inter,Arial" font-size="10" font-weight="800">3–4 SETS</text>
+</g>
+
+<!-- card 5 -->
+<g filter="url(#shadow)">
+<rect x="1125" y="150" width="230" height="610" rx="28" fill="#0b0e14" stroke="#ff4d8d" stroke-opacity=".62"/>
+<rect x="1125" y="150" width="230" height="7" rx="4" fill="url(#orange)"/>
+<text class="m" x="1150" y="190" font-size="12" font-weight="800" letter-spacing="2">DAY 05</text>
+<text class="label" x="1150" y="220">ARMS</text>
+<g transform="translate(1135 260)">
+  <circle cx="105" cy="120" r="25" class="body"/>
+  <path d="M80 149 Q105 133 130 149 L139 214 L105 235 L71 214Z" class="body"/>
+  <path class="line" d="M86 158L55 220M124 158L155 220"/>
+  <path class="line" d="M94 218L78 278M116 218L132 278"/>
+  <ellipse cx="65" cy="203" rx="10" ry="23" class="muscle"/><ellipse cx="145" cy="203" rx="10" ry="23" class="muscle"/>
+  <path class="equipment" d="M45 226H75M135 226H165"/>
+</g>
+<text class="m" x="1150" y="585" font-size="11" letter-spacing="1.4">PRIMARY MOVEMENTS</text>
+<text class="small" x="1150" y="615">Barbell Curl</text><text class="small" x="1150" y="642">Hammer Curl</text><text class="small" x="1150" y="669">Preacher Curl</text><text class="small" x="1150" y="696">Overhead Extension</text>
+<rect x="1150" y="716" width="112" height="25" rx="12" fill="#ff4d8d" fill-opacity=".12"/><text x="1162" y="733" fill="#ff8ab5" font-family="Inter,Arial" font-size="10" font-weight="800">3–4 SETS</text>
+</g>
+</svg>
