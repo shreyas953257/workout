@@ -5,7 +5,6 @@ import { Card, Chip, Empty, SectionHead } from '../ui/primitives'
 import { ProgramDayCard } from '../workout/ProgramBits'
 import { warmupMenuFor, PainTriageCard } from '../workout/ExerciseBits'
 import { COOLDOWN } from '../../data/exercises'
-import workoutSplitOverview from '../../assets/workout-split-overview.jpg'
 import { PROGRAMS, getProgram } from '../../data/programs'
 import { useAppState } from '../../lib/store'
 import { isProgramUnlocked, startFreeSession, startProgramDay, todayPlan, weekForProgram } from '../../lib/start'
@@ -46,7 +45,7 @@ export function Workouts() {
       <section className="stack-2" aria-label="Workout visual guide">
         <div className="panel" style={{ overflow: 'hidden', padding: 0, borderRadius: 'var(--radius-lg)' }}>
           <img
-            src={workoutSplitOverview}
+            src="https://raw.githubusercontent.com/shreyas953257/workout/main/src/assets/workout-split-overview.jpg"
             alt="Premium workout split overview with realistic exercise visuals for chest, back, legs, shoulders, and arms"
             style={{ display: 'block', width: '100%', height: 'auto' }}
           />
