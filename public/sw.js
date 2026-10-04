@@ -12,7 +12,7 @@
  * localStorage, so nothing here ever needs to sync.
  */
 
-const VERSION = 'forge-v1'
+const VERSION = 'forge-v2'
 const SHELL = `${VERSION}-shell`
 const ASSETS = `${VERSION}-assets`
 
@@ -98,6 +98,14 @@ self.addEventListener('fetch', (event) => {
 
   if (url.pathname.includes('/assets/')) {
     event.respondWith(cacheFirst(request, ASSETS))
+    return
+  }
+
+  // Public static files (including workout images) should be fetched fresh and
+  // cached only after a successful network response. Never let an old SW cache
+  // replace a newly deployed image.
+  if (url.pathname.startsWith('/images/') || url.pathname.endsWith('.jpg') || url.pathname.endsWith('.jpeg') || url.pathname.endsWith('.png') || url.pathname.endsWith('.webp')) {
+    event.respondWith(networkFirst(request))
     return
   }
 
