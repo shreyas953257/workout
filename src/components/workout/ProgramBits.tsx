@@ -1,9 +1,10 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Icon, type IconName } from '../ui/Icon'
 import { Card, Chip, Empty, Meter } from '../ui/primitives'
 import { LEVEL_LABELS, PROGRESSION_MODEL_LABELS } from '../../data/programs'
 import { exerciseName } from '../../data/exercises'
+import { ExerciseDetailModal } from './ExerciseDetailModal'
 import { UNLOCK_MAP } from '../../data/unlocks'
 import { unlockRequirementText } from '../../lib/unlocks'
 import { dayForWeekday, programmeWeek, weekLabel } from '../../lib/program'
@@ -166,56 +167,71 @@ export function ProgramDayCard({
   isToday?: boolean
   onStart?: () => void
 }) {
+  const [activeExerciseId, setActiveExerciseId] = useState<string | null>(null)
   const totalSets = day.exercises.reduce((n, e) => n + e.sets, 0)
   return (
-    <Card className={isToday ? 'card--glow' : undefined} pad={false}>
-      <div className="card__head">
-        <div className="row-tight" style={{ minWidth: 0 }}>
-          <span
-            className="empty__icon"
-            style={{ width: 34, height: 34, borderRadius: 11, background: 'var(--accent-soft)', color: 'var(--accent)', flex: 'none' }}
-            aria-hidden
-          >
-            <strong className="num">{day.badge || '•'}</strong>
-          </span>
-          <div style={{ minWidth: 0 }}>
-            <h3 className="strong truncate">{day.name}</h3>
-            <p className="tiny faint truncate">
-              {day.exercises.length} exercises · {totalSets} sets · {formatDuration(day.estimatedMin)}
-              {isToday ? ' · on the schedule today' : ''}
-            </p>
+    <>
+      <Card className={isToday ? 'card--glow' : undefined} pad={false}>
+        <div className="card__head">
+          <div className="row-tight" style={{ minWidth: 0 }}>
+            <span
+              className="empty__icon"
+              style={{ width: 34, height: 34, borderRadius: 11, background: 'var(--accent-soft)', color: 'var(--accent)', flex: 'none' }}
+              aria-hidden
+            >
+              <strong className="num">{day.badge || '•'}</strong>
+            </span>
+            <div style={{ minWidth: 0 }}>
+              <h3 className="strong truncate">{day.name}</h3>
+              <p className="tiny faint truncate">
+                {day.exercises.length} exercises · {totalSets} sets · {formatDuration(day.estimatedMin)}
+                {isToday ? ' · on the schedule today' : ''}
+              </p>
+            </div>
           </div>
+          <button
+            type="button"
+            className="btn btn--sm btn--primary"
+            disabled={locked}
+            onClick={onStart}
+            title={locked ? 'This programme is still locked' : `Start ${day.name}`}
+          >
+            <Icon name="play" size={13} />
+            Start
+          </button>
         </div>
-        <button
-          type="button"
-          className="btn btn--sm btn--primary"
-          disabled={locked}
-          onClick={onStart}
-          title={locked ? 'This programme is still locked' : `Start ${day.name}`}
-        >
-          <Icon name="play" size={13} />
-          Start
-        </button>
-      </div>
-      <div className="card__body" style={{ paddingTop: 0 }}>
-        <p className="tiny muted">{day.summary}</p>
-        <ul className="stack-2" style={{ marginTop: 'var(--sp-3)' }}>
-          {day.exercises.map((ex, i) => (
-            <li key={`${ex.exerciseId}-${i}`} className="row-between tiny" style={{ gap: 'var(--sp-3)' }}>
-              <Link to={`/exercises/${ex.exerciseId}`} className="truncate">
-                {exerciseName(ex.exerciseId)}
-              </Link>
-              <span className="num faint" style={{ flex: 'none' }}>
-                {ex.sets} × {ex.target}
-              </span>
-            </li>
-          ))}
-        </ul>
-        <p className="tiny faint" style={{ marginTop: 'var(--sp-3)' }}>
-          {weekLabel(program, week)}
-        </p>
-      </div>
-    </Card>
+        <div className="card__body" style={{ paddingTop: 0 }}>
+          <p className="tiny muted">{day.summary}</p>
+          <ul className="stack-2" style={{ marginTop: 'var(--sp-3)' }}>
+            {day.exercises.map((ex, i) => (
+              <li key={`${ex.exerciseId}-${i}`} className="row-between tiny" style={{ gap: 'var(--sp-3)' }}>
+                <button
+                  type="button"
+                  className="exercise-trigger-btn truncate"
+                  onClick={() => setActiveExerciseId(ex.exerciseId)}
+                  title={`View ${exerciseName(ex.exerciseId)} photo, cues, and instructions`}
+                  aria-label={`View ${exerciseName(ex.exerciseId)} details`}
+                >
+                  <span className="truncate">{exerciseName(ex.exerciseId)}</span>
+                  <Icon name="info" size={12} className="faint exercise-trigger-icon" />
+                </button>
+                <span className="num faint" style={{ flex: 'none' }}>
+                  {ex.sets} × {ex.target}
+                </span>
+              </li>
+            ))}
+          </ul>
+          <p className="tiny faint" style={{ marginTop: 'var(--sp-3)' }}>
+            {weekLabel(program, week)}
+          </p>
+        </div>
+      </Card>
+
+      <ExerciseDetailModal
+        exerciseId={activeExerciseId}
+        onClose={() => setActiveExerciseId(null)}
+      />
+    </>
   )
 }
 

@@ -20,6 +20,7 @@ import { unlockRequirementText } from '../../lib/unlocks'
 import { exerciseProgression, seriesChange, type ProgressionMetric, type SeriesPoint } from '../../lib/analytics'
 import { formatDate } from '../../lib/dates'
 import { formatWeight } from '../../lib/format'
+import { getExerciseImageUrl, handleExerciseImageError } from '../../lib/exerciseImages'
 import type { Exercise, MovementPattern, WorkoutSession } from '../../types'
 
 /** Everything the exercise detail page renders: coaching, substitutions, history. */
@@ -81,48 +82,58 @@ export function ExerciseHeader({
 }) {
   return (
     <Card className={locked ? undefined : 'card--glow'}>
-      <div className="stack-4">
-        <div className="row-between" style={{ gap: 'var(--sp-3)', alignItems: 'flex-start' }}>
-          <div className="stack-2 grow" style={{ minWidth: 0 }}>
-            <span className="eyebrow row-tight">
-              <Icon name={locked ? 'lock' : 'dumbbell'} size={12} />
-              {PATTERN_LABELS[exercise.pattern] ?? exercise.pattern} · {TIER_LABELS[exercise.tier] ?? exercise.tier}
-            </span>
-            <h1 className="h3">{exercise.name}</h1>
-            {exercise.notes ? <p className="small muted clamp-2">{exercise.notes}</p> : null}
-          </div>
-          {action}
+      <div className="exercise-header-layout">
+        <div className="exercise-header-media">
+          <img
+            src={getExerciseImageUrl(exercise.id)}
+            alt={`${exercise.name} demonstration`}
+            onError={handleExerciseImageError}
+            className="exercise-header-img"
+          />
         </div>
-
-        <div className="row-2">
-          {exercise.muscles.map((m) => (
-            <Chip key={m} icon="target">
-              {MUSCLE_LABELS[m] ?? m}
-            </Chip>
-          ))}
-          {exercise.secondary.slice(0, 3).map((m) => (
-            <Chip key={m}>{MUSCLE_LABELS[m] ?? m}</Chip>
-          ))}
-          {exercise.equipment.map((e) => (
-            <Chip key={e} icon="dumbbell">
-              {EQUIPMENT_LABELS[e] ?? e}
-            </Chip>
-          ))}
-          {exercise.perSide ? <Chip tone="info">Per side</Chip> : null}
-          <Chip icon="zap">{exercise.xpPerSet} XP / set</Chip>
-        </div>
-
-        {locked && requirement ? (
-          <div className="banner banner--warn">
-            <Icon name="lock" size={15} />
-            <span>
-              <strong>{exercise.name} is a gated variation.</strong> {requirement} You can still read the coaching and use a substitution
-              below.
-            </span>
+        <div className="exercise-header-content stack-4">
+          <div className="row-between" style={{ gap: 'var(--sp-3)', alignItems: 'flex-start' }}>
+            <div className="stack-2 grow" style={{ minWidth: 0 }}>
+              <span className="eyebrow row-tight">
+                <Icon name={locked ? 'lock' : 'dumbbell'} size={12} />
+                {PATTERN_LABELS[exercise.pattern] ?? exercise.pattern} · {TIER_LABELS[exercise.tier] ?? exercise.tier}
+              </span>
+              <h1 className="h3">{exercise.name}</h1>
+              {exercise.notes ? <p className="small muted clamp-2">{exercise.notes}</p> : null}
+            </div>
+            {action}
           </div>
-        ) : null}
 
-        <p className="tiny faint">Transcribed from {exercise.source}</p>
+          <div className="row-2" style={{ flexWrap: 'wrap' }}>
+            {exercise.muscles.map((m) => (
+              <Chip key={m} icon="target">
+                {MUSCLE_LABELS[m] ?? m}
+              </Chip>
+            ))}
+            {exercise.secondary.slice(0, 3).map((m) => (
+              <Chip key={m}>{MUSCLE_LABELS[m] ?? m}</Chip>
+            ))}
+            {exercise.equipment.map((e) => (
+              <Chip key={e} icon="dumbbell">
+                {EQUIPMENT_LABELS[e] ?? e}
+              </Chip>
+            ))}
+            {exercise.perSide ? <Chip tone="info">Per side</Chip> : null}
+            <Chip icon="zap">{exercise.xpPerSet} XP / set</Chip>
+          </div>
+
+          {locked && requirement ? (
+            <div className="banner banner--warn">
+              <Icon name="lock" size={15} />
+              <span>
+                <strong>{exercise.name} is a gated variation.</strong> {requirement} You can still read the coaching and use a substitution
+                below.
+              </span>
+            </div>
+          ) : null}
+
+          <p className="tiny faint">Transcribed from {exercise.source}</p>
+        </div>
       </div>
     </Card>
   )
