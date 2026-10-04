@@ -16,7 +16,7 @@ const VERSION = 'forge-v1'
 const SHELL = `${VERSION}-shell`
 const ASSETS = `${VERSION}-assets`
 
-const SHELL_FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg']
+const SHELL_FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './workout-split-bg.jpg']
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
