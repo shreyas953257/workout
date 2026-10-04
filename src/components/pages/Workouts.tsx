@@ -43,12 +43,21 @@ export function Workouts() {
   return (
     <div className="page">
       <section className="stack-2" aria-label="Workout visual guide">
-        <div className="panel" style={{ overflow: 'hidden', padding: 0, borderRadius: 'var(--radius-lg)' }}>
-          <img
-            src="https://cdn.jsdelivr.net/gh/shreyas953257/workout@main/src/assets/workout-split-overview.jpg"
-            alt="Premium workout split overview with realistic exercise visuals for chest, back, legs, shoulders, and arms"
-            style={{ display: 'block', width: '100%', height: 'auto' }}
-          />
+        <div className="panel workout-hero" style={{ overflow: 'hidden', padding: 0, borderRadius: 'var(--radius-lg)' }}>
+          <picture>
+            <source srcSet="/images/workout-split-overview.jpg" type="image/jpeg" />
+            <img
+              src="/images/workout-split-overview.jpg"
+              alt="Premium workout split overview with realistic exercise visuals for chest, back, legs, shoulders, and arms"
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+              style={{ display: 'block', width: '100%', height: 'auto' }}
+              onError={(event) => {
+                event.currentTarget.src = '/images/workout-split-overview.jpg?v=2'
+              }}
+            />
+          </picture>
         </div>
       </section>
       {draft ? (
