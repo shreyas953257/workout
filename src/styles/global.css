@@ -49,7 +49,7 @@ body::before {
   inset: 0;
   z-index: -2;
   background:
-    linear-gradient(180deg, rgba(5, 7, 10, 0.86) 0%, rgba(5, 7, 10, 0.94) 58%, rgba(5, 7, 10, 0.98) 100%),
+    linear-gradient(180deg, rgba(5, 7, 10, 0.38) 0%, rgba(5, 7, 10, 0.52) 58%, rgba(5, 7, 10, 0.68) 100%),
     url('/images/workout-split-overview.jpg') center top / cover no-repeat fixed;
   pointer-events: none;
 }
