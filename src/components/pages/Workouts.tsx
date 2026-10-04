@@ -45,7 +45,7 @@ export function Workouts() {
       <section className="stack-2" aria-label="Workout visual guide">
         <div className="panel" style={{ overflow: 'hidden', padding: 0, borderRadius: 'var(--radius-lg)' }}>
           <img
-            src="https://raw.githubusercontent.com/shreyas953257/workout/main/src/assets/workout-split-overview.jpg"
+            src="https://cdn.jsdelivr.net/gh/shreyas953257/workout@main/src/assets/workout-split-overview.jpg"
             alt="Premium workout split overview with realistic exercise visuals for chest, back, legs, shoulders, and arms"
             style={{ display: 'block', width: '100%', height: 'auto' }}
           />
