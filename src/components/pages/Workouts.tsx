@@ -42,6 +42,15 @@ export function Workouts() {
 
   return (
     <div className="page">
+      <section className="stack-2" aria-label="Workout visual guide">
+        <div className="panel" style={{ overflow: 'hidden', padding: 0, borderRadius: 'var(--radius-lg)' }}>
+          <img
+            src="/images/workout-visual-guide.svg"
+            alt="Visual workout guide showing chest and triceps, back and biceps, legs, shoulders, and arms"
+            style={{ display: 'block', width: '100%', height: 'auto' }}
+          />
+        </div>
+      </section>
       {draft ? (
         <div className="banner banner--accent">
           <Icon name="play" size={16} />
