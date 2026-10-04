@@ -11,10 +11,12 @@ import './styles/global.css'
  * you are editing. A failure here is never fatal: the app works without it.
  */
 if (import.meta.env.PROD && 'serviceWorker' in navigator) {
+  // The workout app is fully client-side. Unregister older service workers so
+  // stale cached HTML/assets cannot interfere with the deployed app.
   window.addEventListener('load', () => {
-    void navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`).catch(() => {
-      /* offline caching is a bonus, not a requirement */
-    })
+    void navigator.serviceWorker.getRegistrations().then((registrations) =>
+      Promise.all(registrations.map((registration) => registration.unregister())),
+    )
   })
 }
 
